@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 80px;
+    padding-top: 80px;
+    gap: 70px;
+}
+#left {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+#left h1 {
+    font-size: 8vw;
+    font-weight: 500;
+    line-height: 85px;
+}
+
+#bottom-left {
+    width: 100%;
+}
+
+#color {
+    width: fit-content;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid #000;
+}
+
+#color h5 {
+    font-size: 1.4vw;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+#color1 {
+    height: 1.4vw;
+    width: 1.4vw;
+    background-color: thistle;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+#color2 {
+    height: 1.4vw;
+    width: 1.4vw;
+    background-color: salmon;
+    border-radius: 50%;
+}
+
+#left h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.4vw;
+}
+
+#left p {
+    font-size: 1.2vw;
+    width: 70%;
+    font-weight: 600;
+    color: #444;
+    line-height: 1.4vw;
+}
+
+#right {
+    height: 90%;
+    width: 30%;
+    position: relative;
+}
+
+#right img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+
+#right-top {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+#right-top h4 {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+#right-top h5 {
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+#right-top h5 i {
+    color: gold;
+}
+
+#black-container {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #1c1c1c;
+    color: #fff;
+    font-weight: 500;
+    right: -18%;
+    top: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#black-container h5 {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#rotated {
+    position: absolute;
+    left: -9%;
+    bottom: 2%;
+    rotate: -90deg;
+    transform-origin: 0 0;
+    font-size: 1.6vw;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    #main {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding: 40px;
+        padding-top: 20px;
+        gap: 10px;
+    }
+    #left {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+    
+    #left h1 {
+        font-size: 18vw;
+        font-weight: 500;
+        line-height: 18.3vw;
+    }
+    
+    #bottom-left {
+        width: 100%;
+    }
+    
+    #color {
+        width: fit-content;
+        margin-top: 30px;
+    }
+    
+    #color h5 {
+        font-size: 3vw;
+        margin-right: 10px;
+        font-weight: 500;
+    }
+    
+    #color1 {
+        height: 3vw;
+        width: 3vw;
+        margin: 4px;
+    }
+    
+    #color2 {
+        height: 3vw;
+        width: 3vw;
+    }
+    
+    #left h2 {
+        font-size: 4vw;
+    }
+    
+    #left p {
+        font-size: 3vw;
+        width: 100%;
+        line-height: 3.3vw;
+    }
+    #right {
+        height: 50%;
+        width: 100%;
+        position: relative;
+    }
+    
+    #right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #right-top {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 0px;
+    }
+    
+    #right-top h4 {
+        font-size: 5vw;
+    }
+    
+    #right-top h5 {
+        font-size: 3vw;
+    }
+    
+    #right-top h5 i {
+        color: gold;
+    }
+    
+    #black-container {
+        position: absolute;
+        height: 30px;
+        width: 70px;
+        border-radius: 20px;
+        background-color: #1c1c1c;
+        color: #fff;
+        font-weight: 500;
+        right: 1%;
+        top: 101%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #black-container h5 {
+        font-size: 2vw;
+        font-weight: 500;
+    }
+    
+    #rotated {
+        position: absolute;
+        left: 1%;
+        bottom: -6.5%;
+        rotate: 0deg;
+        transform-origin: 0 0;
+        font-size: 5vw;
+        font-weight: 500;
+    }
+}
